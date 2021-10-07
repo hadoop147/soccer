@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pitch.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pitch.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%#= @pitch.image %>
+  <%= image_tag(@pitch.image_url, width: 600) if @pitch.image.present? %>
+</p>
+
+<%= link_to 'Edit', edit_pitch_path(@pitch) %> |
+<%= link_to 'Back', pitches_path %>
