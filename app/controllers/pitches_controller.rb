@@ -8,6 +8,8 @@ class PitchesController < ApplicationController
 
   # GET /pitches/1 or /pitches/1.json
   def show
+    @comments = @pitch.comments.all
+    @comment = @pitch.comments.build
   end
 
   # GET /pitches/new

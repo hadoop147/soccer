@@ -14,6 +14,16 @@
   <strong>Image:</strong>
   <%#= @pitch.image %>
   <%= image_tag(@pitch.image_url, width: 600) if @pitch.image.present? %>
+  <h3>Comments</h3>
+    <% @comments.each do |comment| %>
+      <div>
+        <strong><%= comment.user_name %></strong>
+        <br>
+        <p><%= comment.body %></p>
+        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+    <% end %>
+    <%= render partial: 'comments/form', locals: { comment: @comment } %>
 </p>
 
 <%= link_to 'Edit', edit_pitch_path(@pitch) %> |
