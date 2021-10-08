@@ -12,7 +12,9 @@ gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 gem 'sqlite3', '~> 1.3.11'
 
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'net-ssh'
+gem 'devise'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
