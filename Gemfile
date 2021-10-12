@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 # Use sqlite3 as the database for Active Record
@@ -15,6 +14,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'net-ssh'
 gem 'devise'
+gem 'activeadmin'#, github: 'activeadmin'
+gem 'inherited_resources'#, github: 'activeadmin/inherited_resources'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
