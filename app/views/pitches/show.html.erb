@@ -20,8 +20,8 @@
     <p><b>Name: </b><%= @pitch.name %></p>
     <p><b>Description: </b><%= @pitch.description %></p>
     <p>
-      <%= link_to 'Edit', edit_pitch_path(@pitch) %> |
-      <%= link_to 'Delete', @pitch, data: { confirm: 'Are you sure?' }, method: :delete %> |
+      <!-- removed as now controlled through the activeadmin page<%#= link_to 'Edit', edit_pitch_path(@pitch) %> |
+      <%#= link_to 'Delete', @pitch, data: { confirm: 'Are you sure?' }, method: :delete %> |-->
       <%= link_to 'Back', pitches_path %>
     </p>
   </div>
